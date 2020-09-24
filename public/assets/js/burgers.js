@@ -1,7 +1,10 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
-  $(".change-eat").on("click", function(event) {
-    var id = $(this).data("id");
+  $(".create-form").on("submit", function(event) {
+    event.preventDefault();
+    var newBurger = {
+      burger_name: $("#newburger").val().trim(), devoured: 0
+    };
     var newEat = $(this).data("newlyEat");
 
     var newEatState = {
