@@ -1,7 +1,6 @@
 <div class="container">
   <div class="jumbotron">
     <h1>EAT DA BURGERS!</h1>
-    <p>Burgers to Eat</p>
     <h2>Get a Burger</h2>
     <panel>
       <form class="create-form">
@@ -21,8 +20,10 @@
           <ul>
             {{#each burgers}}
             {{#unless devoured}}
-            <span>{{this.id}} - {{this.burger_name}}</span>
-            <button type="button" class="eatburger btn btn-danger" id="eatbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}">Eat it!</button>
+            <li>
+              <span>{{this.id}} - {{this.burger_name}}</span>
+              <button type="button" class="btn btn-danger eatburger" data-id="{{this.id}}" data-newDevoured="{{devour}}">Eat it!</button>
+            </li>
             {{/unless}}
             {{/each}}
           </ul>

@@ -11,26 +11,27 @@ $(function () {
       data: newBurger
     }).then(
       function () {
-        console.log("created new Burger");
         location.reload();
       }
     );
+  });
 
-    $(".eatburger").on("click", function (event) {
-      event.preventDefault();
-      var id = $(this).data("id");
-      var changeDevoured = {
-        devoured: 1
-      };
+  $(".eatburger").on("click", function (event) {
 
-      $.ajax("/api/burgers/" + id, {
-        type: "PUT",
-        data: changeDevoured
-      }).then(
-        function () {
-          console.log("Burger has been eaten");
-          location.reload();
-        });
-    });
+    // event.preventDefault();
+    const id = $(this).data("id");
+    const changeDevoured = {
+      devoured: 1
+    };
+    console.log("button clicked")
+
+    $.ajax("/api/burgers/" + id, {
+      type: "PUT",
+      data: changeDevoured
+    }).then(
+      function () {
+        console.log("Burger has been eaten");
+        location.reload();
+      });
   });
 });

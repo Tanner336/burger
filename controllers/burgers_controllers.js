@@ -14,11 +14,12 @@ router.post("/api/burgers", function(req, res) {
   burger.insertOne([
     "burger_name", "devoured"], [req.body.burger_name, req.body.devoured], function(result) {
       res.json({id: result.insertId})
-  });
+});
 });
 
 router.put("/api/burgers/:id", function(req, res) {
   let condition = "id = " + req.params.id;
+  console.log(condition)
 
   burger.updateOne({
     devoured: req.body.devoured
