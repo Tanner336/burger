@@ -13,4 +13,4 @@ This fully functional web application can be used to add different burgers and t
 If you would like to contribute, all you need is to confirm with myself and to make sure that you leave the project better than when you found it
 
 ## Questions 
-If you have any questions feel free to contact me at the GitHub http://www.github.com/Tanner336 tannercook336@gmail.com
+If you have any questions feel free to contact me at the GitHub http://www.github.com/Tanner336 or tannercook336@gmail.com
