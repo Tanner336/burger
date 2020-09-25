@@ -37,7 +37,9 @@
           <ul>
             {{#each burgers}}
             {{#if devoured}}
+            <li>
             <span>{{this.id}} - {{this.burger_name}}</span>
+            </li>
             {{/if}}
             {{/each}}
           </ul>
