@@ -1,4 +1,4 @@
-# burger
+# Burger Application 
 
 ## Description
 This is a simple Burger Eating App, that utilizes mysql, node.js, express, handlebars, and the standardized ORM file management 
